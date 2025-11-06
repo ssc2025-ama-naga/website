@@ -1,0 +1,391 @@
+/* SSC 2025 AMACC Naga - Styles */
+:root {
+  --ssc-maroon: #8B2D2B;
+  --ssc-navy: #2D3667;
+  --ssc-gold: #FFB800;
+  --ssc-white: #FFFFFF;
+  --ssc-orange: #F9A33A;
+  --ssc-lightblue: #6CA8D6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: var(--ssc-white);
+}
+
+/* Navigation Bar */
+nav {
+  background-color: var(--ssc-navy);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav .logo {
+  color: var(--ssc-gold);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0;
+}
+
+nav ul li a {
+  color: var(--ssc-white);
+  text-decoration: none;
+  padding: 20px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  background-color: var(--ssc-maroon);
+  color: var(--ssc-gold);
+}
+
+nav ul li a.active {
+  background-color: var(--ssc-maroon);
+  color: var(--ssc-gold);
+  border-bottom: 3px solid var(--ssc-gold);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--ssc-white);
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--ssc-maroon) 0%, var(--ssc-navy) 100%);
+  color: var(--ssc-white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 10px;
+  background-color: var(--ssc-gold);
+  color: var(--ssc-navy);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 2px solid var(--ssc-gold);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--ssc-gold);
+}
+
+.btn-secondary {
+  background-color: var(--ssc-orange);
+  border-color: var(--ssc-orange);
+  color: var(--ssc-white);
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  color: var(--ssc-orange);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Section Titles */
+h2 {
+  color: var(--ssc-navy);
+  font-size: 36px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--ssc-gold);
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+h3 {
+  color: var(--ssc-maroon);
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #f8f9fa;
+  border-left: 5px solid var(--ssc-gold);
+  padding: 25px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--ssc-maroon);
+}
+
+.card p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* Officer Grid */
+.officers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.officer-card {
+  background: linear-gradient(135deg, var(--ssc-maroon) 0%, var(--ssc-navy) 100%);
+  color: var(--ssc-white);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.officer-card:hover {
+  transform: translateY(-5px);
+}
+
+.officer-card h3 {
+  color: var(--ssc-gold);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.officer-card p {
+  color: var(--ssc-lightblue);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.officer-card a {
+  color: var(--ssc-orange);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.officer-card a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--ssc-navy);
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--ssc-lightblue);
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--ssc-gold);
+  box-shadow: 0 0 5px rgba(255, 184, 0, 0.3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* Footer */
+footer {
+  background-color: var(--ssc-navy);
+  color: var(--ssc-white);
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  color: var(--ssc-gold);
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: var(--ssc-orange);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--ssc-navy);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  nav ul.active {
+    max-height: 500px;
+  }
+
+  nav ul li a {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .officers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 4px solid #28a745;
+  display: none;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border-left: 4px solid #f5c6cb;
+  display: none;
+}
