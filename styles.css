@@ -41,7 +41,7 @@ nav .nav-container {
 }
 
 nav .logo {
-  color: var(--ssc-navy);
+  color: var(--ssc-maroon);
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
@@ -60,7 +60,7 @@ nav .ssc-logo {
 }
 
 .logo h1 span {
-  color: var(--ssc-maroon); 
+  color: var(--ssc-navy); 
 }
 
 nav ul {
