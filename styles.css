@@ -41,17 +41,26 @@ nav .nav-container {
 }
 
 nav .logo {
-  color: var(--ssc-gold);
+  color: var(--ssc-navy);
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   padding: 15px 0;
   
 nav .ssc-logo {
-  height: 75px;        
-  width: 75px;
-  margin-right: 10px;   
-  vertical-align: middle;
+  height: 40px; 
+  width: auto;
+  margin-right: 10px; 
+  border-radius: 4px; 
+}
+
+.logo h1 {
+  margin: 0; 
+  font-size: 20px;
+}
+
+.logo h1 span {
+  color: var(--ssc-maroon); 
 }
 
 nav ul {
